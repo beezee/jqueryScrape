@@ -6,14 +6,14 @@
     
     proxyUrl : 'jquery.scrape.scraper.php',
    
-    getResult : function(url) {
-       $.ajaxSetup({async:false});
+    getResult : function(url, event) {
+       var finishedEvent = (typeof(event) == 'string') ? event : false;
        var self = this;
        if (typeof(url) != 'string') return false;
      
        $.post(this.proxyUrl, {jqueryScrapeUrl : url}, function(response) {
-         self.result = $(response)
-         $.ajaxSetup({async : true})
+         self.result = $(response);
+         if (finishedEvent) $.event.trigger(finishedEvent);
        });
      },
      
