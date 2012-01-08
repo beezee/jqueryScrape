@@ -4,7 +4,7 @@
     
     result : '',
     
-    proxyUrl : 'jquery.scrape.scraper.php',
+    proxyUrl : 'jquery.scrape.proxy.php',
    
     getResult : function(url, event) {
        var finishedEvent = (typeof(event) == 'string') ? event : false;
