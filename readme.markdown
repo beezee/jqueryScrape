@@ -1,0 +1,1 @@
+See http://brianzeligson.com/jqueryScrape for usage
