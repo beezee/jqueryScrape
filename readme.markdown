@@ -14,7 +14,7 @@ simplest usage as follows:
 			$.jqueryScrape.getResult('http://www.buzzfeed.com', 'buzzfeed');
 		});
                 
-The proxy will replace all <img> tags as <span> tags to prevent them from downloading on initial request. Use $.jqueryScrape.span2img to return
+The proxy will replace all img tags as spantags to prevent them from downloading on initial request. Use $.jqueryScrape.span2img to return
 a jQuery accessible object with all img tags intact. Additional options are available for the method (for sites using relative urls, storing src in
 alternative attributes, filtering which images are converted back, etc) and the options and advanced use are available in the plugin source, as well
 as the example site above.
